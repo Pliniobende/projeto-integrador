@@ -1,0 +1,43 @@
+body {
+    background-color: ivory;
+    font-family: Verdana;
+    color: rgb(201, 147, 48);
+    font-weight: bold;
+}
+
+.card {
+    width: 300px;
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.area-login {
+    box-shadow: 1px 1px 5px rgb(232, 255, 23);
+    background-color: rgb(43, 40, 43);
+    padding: 30px;
+    border-radius: 2%;
+}
+
+.entradas > input {
+    border-radius: 10%;
+    margin: 1%;
+    padding-left: 5px;
+}
+
+.entradas > button {
+    background-image: linear-gradient(to right, rgb(236, 215, 215), gray );
+    width: 25%;
+    border-radius: 10%;
+    margin: 2%; 
+    font-weight: bold;
+}
+
+.entradas > label {
+    font-size: 12px;
+}
+
+.entradas > a {
+    font-size: 12px;
+}
+

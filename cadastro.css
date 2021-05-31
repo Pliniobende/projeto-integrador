@@ -1,0 +1,234 @@
+body {
+    background-color: black;
+}
+
+div.body {
+    background-image: url("images/cadastroBackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+div.BigLogo {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+div.title {
+    display: flex;
+    justify-content: center;
+}
+
+div.title h2 {
+    color: #F5A600;
+    background-color: black;
+    padding: 5px 10px;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+div.Datas {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 50%;
+    padding-bottom: 5%;
+}
+
+.Datas div {
+    padding: 10px 0px;
+}
+
+label.label1 {
+    background-color: black;
+    padding: 5px 10px;
+    color: white;
+    font-family: Roboto;
+    font-size: 22px;
+}
+
+label.label2 {
+    padding: 5px 10px;
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+input.input1 {
+    width: 400px;
+    height: 35px;
+    font-family: Roboto;
+    font-size: 18px;    
+}
+
+input.input2 {
+    font-size: 50px;
+}
+
+button.btform {
+    background-color: #F5A600;
+    color: black;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+button.btform:hover {
+    background-color: #b88007;
+    text-decoration: underline;
+}
+
+div.rodape {
+    background-color: rgb(103, 103, 103);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.formulario {
+    margin: 50px 0px;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+p.contato {
+    color: white;
+    font-family: Roboto;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+
+p.sendMessage {
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.formulario textarea {
+    color: rgb(51, 51, 51);
+    font-family: Roboto;
+    font-size: 15px;
+}
+
+.formulario input {
+    color: rgb(51, 51, 51);
+    font-family: Roboto;
+    font-size: 15px;
+    height: 35px;
+    width: 200px;
+}
+
+.formulario button {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    height: 35px;
+    width: 100px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: rgb(75, 75, 75);
+    text-decoration: underline;
+}
+
+div.smallMenu {
+    width: 20vw;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+}
+p.Mapa {
+    color: white;
+    font-family: Roboto;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+
+p.allMenu {
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.menuList li {
+    list-style-type: "- ";
+    font-family: Roboto;
+    font-size: 20px;
+    padding: 0px;
+    margin-left: -30px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+li.menuItem a {
+    color: white;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+LI.menuItem a:hover {
+    text-decoration: underline;
+}
+
+div.contato {
+    margin: 50px 0px;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+.contato a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 20px;
+    color: white;
+}
+
+.contato a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+div.copyright{
+    background-color: rgb(51, 51, 51);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.copyright {
+    font-family: Roboto;
+    font-size: 15px;
+    color: white;
+}

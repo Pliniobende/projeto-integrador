@@ -208,6 +208,84 @@ img.quemsomosimagem {
 }
 
 /*-----------------------------------------------------------------------------*/
+/*                                   div Categorias                            */
+
+div.Categorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.Categorias img {
+    height: 550px;
+}
+
+div.Categorias p {
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: rgba(162, 79, 1, 1);
+    padding: 5px;
+    color: white;
+    position: absolute;
+    align-self: flex-start;
+    visibility: collapse;
+    /*z-index: -1;*/
+}
+
+div.Categorias div:hover p { visibility: visible; }
+
+div.Categorias div {cursor: pointer;}
+
+div.Categorias div:hover {
+    border-left: rgba(162, 79, 1, 1) solid 5px;
+    border-right: rgba(162, 79, 1, 1) solid 5px;
+    transition: all 0.5s;
+}
+
+div.imgCat1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.imgCat2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.imgCat3 {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.imgCat4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.CatInfo {
+    flex-grow: 1;
+    background: rgba(221, 132, 0, 1);
+}
+
+.Categorias h3 {
+    font-family: Roboto;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 30px 50px;
+}
+
+.Categorias h4 {
+    font-family: Roboto;
+    font-size: 20px;
+    padding: 30px 50px;
+}
+
+/*-----------------------------------------------------------------------------*/
 /*                                   div rodape                                */
 
 

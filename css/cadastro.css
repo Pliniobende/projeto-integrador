@@ -63,7 +63,7 @@ input.input1 {
 }
 
 input.input2 {
-    font-size: 50px;
+    font-size: 18px;
 }
 
 button.btform {
@@ -84,6 +84,10 @@ button.btform:hover {
     background-color: #b88007;
     text-decoration: underline;
 }
+
+/*-----------------------------------------------------------------------------*/
+/*                                   div rodape                                */
+
 
 div.rodape {
     background-color: rgb(103, 103, 103);
@@ -199,25 +203,13 @@ LI.menuItem a:hover {
 
 div.contato {
     margin: 50px 0px;
-    width: 20vw;
+    width: 22vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: white;
-    font-family: Roboto;
-    font-size: 20px;
-}
-
-.contato a {
-    text-decoration: none;
     font-family: Roboto;
     font-size: 20px;
     color: white;
-}
-
-.contato a:hover {
-    text-decoration: underline;
-    color: whitesmoke;
 }
 
 div.copyright{
@@ -231,4 +223,34 @@ p.copyright {
     font-family: Roboto;
     font-size: 15px;
     color: white;
+}
+
+div.contato-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-phone {
+    font-size: 25px;
+    padding: 0px 5px;
+}
+
+.fa-envelope-open-text {
+    font-size: 25px;
+    padding: 0px 5px;
+}
+
+.fa-twitter-square {
+    font-size: 25px;
+    padding: 0px 5px;
+}
+
+.fa-facebook {
+    font-size: 25px;
+    padding: 0px 5px;
+}
+
+.fa-instagram-square {
+    font-size: 25px;
+    padding: 0px 5px;
 }

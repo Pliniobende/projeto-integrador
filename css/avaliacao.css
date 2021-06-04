@@ -141,8 +141,8 @@ h2 {
 }
 
 
-/*-----------------------------------------------------------------------------*/
-/*                            div Título                                   */
+/*-----------*/
+/*div Título*/
 
 div.avaliacao {
     background-color: rgba(162, 79, 1, 1);
@@ -172,8 +172,8 @@ div.avaliacao-titulo p {
     padding: 0px 100px 0px 120px;
 }
 
-/*-----------------------------------------------------------------------------*/
-/*                                   div Categorias                            */
+/*---------------*/
+/*div Categorias*/
 
 div.Categorias {
     background-color: rgba(162, 79, 1, 1);
@@ -229,8 +229,8 @@ div.Categorias div:hover {
     padding: 30px 50px;
 }
 
-/*-----------------------------------------------------------------------------*/
-/*                                   div rodape                                */
+/*-----------*/
+/*div rodape*/
 
 
 div.rodape {

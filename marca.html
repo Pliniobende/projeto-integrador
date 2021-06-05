@@ -45,7 +45,7 @@
         <div class="marca-titulo">
             <h3>Whisky</h3>
             <div class="whisky">
-                <img src="images/Logo.png" alt="Logo">
+                <img src="images/Logo.png" alt="Logo" width="50%">
             </div>   
             <p>
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -54,12 +54,31 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
             </p>
         </div>
 
-        <div>
-            <p>Avaliação</p>
+        <div class="avaliacao">
+            <div class="interacao">
+                <p>Avaliação</p>
+                <form action="/" method="POST">
+                    <label for="1estrela">1</label>
+                    <input type="radio" name="avaliacao" value="1estrela" id="1estrela">
+                    <label for="2estrela">2</label>
+                    <input type="radio" name="avaliacao" value="2estrela" id="2estrela">
+                    <label for="3estrela">3</label>
+                    <input type="radio" name="avaliacao" value="3estrela" id="3estrela">
+                    <label for="4estrela">4</label>
+                    <input type="radio" name="avaliacao" value="4estrela" id="4estrela">
+                    <label for="5estrela">5</label>
+                    <input type="radio" name="avaliacao" value="5estrela" id="5estrela">
+                </form>
+            </div>    
         </div>
 
-        <div>
-            <p>Comentários</p>
+        <div class="comentarios">
+            <div class="interacao">
+                <p class="interacao">Comentários</p>
+                <textarea name="comentario" rows="6" id="comentario" placeholder="Deixe sua opinião"></textarea>
+                <br />
+                <button class="btSubmit" type="submit">Enviar</button>
+            </div>    
         </div>
     </div>
 

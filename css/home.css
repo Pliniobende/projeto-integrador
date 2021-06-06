@@ -1,5 +1,6 @@
 body {
-    background-color: black;
+    margin: 0px;
+    padding: 0px;
 }
 
 div.Cabecario {
@@ -7,12 +8,13 @@ div.Cabecario {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
+    /* width: 100%; */
 }
 
 div.Main-Menu {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 50px;
     align-items: center;
@@ -44,7 +46,7 @@ button.btHome    {
     text-transform: uppercase;
     height: 50px;
     width: 100px;
-    border: 0px;
+    border: none;
     margin: 0px;
     cursor: pointer;
 }
@@ -62,7 +64,7 @@ button.btQuemSomos {
     font-weight: bold;
     height: 50px;
     width: 170px;
-    border: 0px;
+    border: none;
     margin: 0px;
     cursor: pointer;
 }
@@ -79,7 +81,7 @@ button.btCategorias {
     font-weight: bold;
     height: 50px;
     width: 170px;
-    border: 0px;
+    border: none;
     margin: 0px;
     cursor: pointer;
 }
@@ -97,7 +99,7 @@ button.btContato {
     font-weight: bold;
     height: 50px;
     width: 170px;
-    border: 0px;
+    border: none;
     margin: 0px;
     cursor: pointer;
 }
@@ -114,7 +116,7 @@ button.btLoginSignUp {
     font-size: 18px;
     height: 30px;
     width: 100px;
-    border: 0px;
+    border: none;
     margin: 1px; 
     text-transform: uppercase;
     cursor: pointer;
@@ -144,14 +146,6 @@ h2 {
 /*-----------------------------------------------------------------------------*/
 /*                            div quem somos                                   */
 
-div.QuemSomos {
-    background-color: rgba(162, 79, 1, 1);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 10px 0px;
-}
-
 div.QSimagem {     
     flex-grow: 1;
 }
@@ -160,7 +154,7 @@ div.QSConteudo {
 }
 
 div.QuemSomos div {
-    padding: 0px 50px;
+    padding: 10px 50px;
     /*border: white solid 1px;*/
 }
 
@@ -175,7 +169,7 @@ div.QSConteudo button {
     font-size: 20px;
     height: 40px;
     width: 200px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     border: none;
     background: rgba(100, 103, 102, 1);
     color: white;
@@ -211,13 +205,10 @@ img.quemsomosimagem {
 /*                                   div Categorias                            */
 
 div.Categorias {
+    background-color: rgba(221, 132, 0, 1);
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-div.Categorias img {
-    height: 550px;
 }
 
 div.Categorias p {
@@ -230,7 +221,6 @@ div.Categorias p {
     position: absolute;
     align-self: flex-start;
     visibility: collapse;
-    /*z-index: -1;*/
 }
 
 div.Categorias div:hover p { visibility: visible; }
@@ -267,11 +257,6 @@ div.imgCat4 {
     align-items: center;
 }
 
-div.CatInfo {
-    flex-grow: 1;
-    background: rgba(221, 132, 0, 1);
-}
-
 .Categorias h3 {
     font-family: Roboto;
     font-size: 35px;
@@ -287,14 +272,6 @@ div.CatInfo {
 
 /*-----------------------------------------------------------------------------*/
 /*                                   div rodape                                */
-
-
-div.rodape {
-    background-color: rgb(103, 103, 103);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 
 div.formulario {
     margin: 50px 0px;
@@ -343,7 +320,7 @@ p.sendMessage {
     width: 100px;
     border: none;
     text-transform: uppercase;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     cursor: pointer;
 }
 
@@ -453,4 +430,74 @@ div.contato-items {
 .fa-instagram-square {
     font-size: 25px;
     padding: 0px 5px;
+}
+
+@media (min-width: 1280px){
+
+    div.QuemSomos {
+        background-color: rgba(162, 79, 1, 1);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+
+    div.imgCat1 img { height: 100vh; }
+    div.imgCat2 img { height: 100vh; }
+    div.imgCat3 img { height: 100vh; }
+    div.imgCat4 img { height: 100vh; }
+    
+    div.CatInfo {
+        flex-grow: 1;
+        background: rgba(221, 132, 0, 1);
+    }
+
+    div.rodape {
+        background-color: rgb(103, 103, 103);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    div.formulario {width: 25vw;}
+    div.smallMenu {width: 20vw;}
+    div.contato {width: 25vw;}
+}
+
+@media (max-width: 1279px){
+
+    div.QuemSomos {
+        background-color: rgba(162, 79, 1, 1);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+
+    div.QSimagem { align-self: center;}
+
+    div.imgCat1 img { height: 75vh; }
+    div.imgCat2 img { height: 75vh; }
+    div.imgCat3 img { height: 75vh; }
+    div.imgCat4 img { height: 75vh; }
+    
+    div.CatInfo {
+        flex-grow: 0;
+        background: rgba(221, 132, 0, 1);
+    }
+
+    div.rodape {
+        background-color: rgb(103, 103, 103);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.formulario { width: 50vw; }
+    div.smallMenu { width: 50vw; }
+    div.contato { width: 50vw; }
+
+    div.contato div {
+        padding: 10px 0px;
+    }
 }

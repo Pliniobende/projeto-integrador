@@ -181,44 +181,39 @@ div.Categorias {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 100px 0px 100px;
+    padding: 10px 10px
 }
 
 div.tipos {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
     margin: 10px 10px;
+    justify-content: space-around;
+    width: 100%;
 }
 
-div.whisky {
+div.tipos div {cursor: pointer;}
+
+
+div.whisky input:hover {
     margin: 10px 10px;
     width: 200px;
     text-align: center;
     padding: 0px 18px 0px 18px;
+    transition: all 0.5s;
 }
 
-div.Categorias img {
+div.Categorias input {
     height: 100px;
+    object-fit: cover;
 }
 
 div.Categorias p {
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 35px;
     font-weight: bold;
-    background-color: rgba(162, 79, 1, 1);
     padding: 5px;
-    color: black;
-}
-
-div.Categorias div:hover p { visibility: visible; }
-
-div.Categorias div {cursor: pointer;}
-
-div.Categorias div:hover {
-    border-left: rgba(162, 79, 1, 1) solid 5px;
-    border-right: rgba(162, 79, 1, 1) solid 5px;
-    transition: all 0.3s;
+    color: blanchedalmond;
 }
 
 
@@ -228,6 +223,7 @@ div.Categorias div:hover {
     font-weight: bold;
     padding: 30px 50px;
 }
+
 
 /*-----------*/
 /*div rodape*/

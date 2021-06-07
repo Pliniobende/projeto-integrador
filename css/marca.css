@@ -196,6 +196,21 @@ div.avaliacao {
     color: blanchedalmond;
 }
 
+.estrelas input[type=radio] {
+    display: none;
+  }
+  .estrelas label i.fa{
+    font-size: 2.5em
+  }
+  .estrelas label i.fa:before {
+    content:'\f005';
+    color: #FC0;
+  }
+  .estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
+  }
+
+
 div.comentarios {
     font-family: Roboto;
     font-size: 22px;
@@ -212,6 +227,7 @@ div.interacao {
 div.comentarios textarea {
     width: 50%;
 }
+
 
 /*-----------*/
 /*div rodape*/

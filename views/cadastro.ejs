@@ -21,11 +21,11 @@
             <h2>Preencha seus Dados</h2>
         </div>
         <div class="Datas">
-            <form action="">
+            <form method="POST" action="/api/user/signup">
                 <div>
-                    <label class="label1" for="nome"><b>Nome:</b>*</label>
+                    <label class="label1" for="name"><b>Nome:</b>*</label>
                     <br>
-                    <input class="input1" type="text" name="nome" id="nome" required>
+                    <input class="input1" type="text" name="name" id="name" required>
                 </div>
                 <div>
                     <label class="label1" for="email"><b>email:</b>*</label>
@@ -33,14 +33,14 @@
                     <input class="input1" type="email" name="email" id="email" required>
                 </div>
                 <div>
-                    <label class="label1" for="senha"><b>Senha:</b>*</label>
+                    <label class="label1" for="password"><b>Senha:</b>*</label>
                     <br>
-                    <input class="input1" type="password" name="senha" id="senha" required>
+                    <input class="input1" type="password" name="password" id="password" required>
                 </div>
                 <div>
-                    <label class="label1" for="celular"><b>Celular:</b></label>
+                    <label class="label1" for="mobile"><b>Celular:</b></label>
                     <br>
-                    <input class="input1" type="tel" name="celular" id="celular">
+                    <input class="input1" type="tel" name="mobile" id="mobile">
                 </div>
                 <div>
                     <label class="label1">Categorias:</label>
@@ -60,9 +60,9 @@
                 <div>
                     <label class="label1">Aceita receber nossos news-letters?</label>
                     <br>
-                    <input class="input2" type="radio" id="sim" name="cinema" value="sim" required>
+                    <input class="input2" type="radio" id="sim" name="newsletter" value="sim" required>
                     <label class="label2" for="sim">Sim</label>
-                    <input class="input2" type="radio" id="nao" name="cinema" value="nao" required>
+                    <input class="input2" type="radio" id="nao" name="newsletter" value="nao" required>
                     <label class="label2" for="nao">Não</label>
                 </div>
                 <div>

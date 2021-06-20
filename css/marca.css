@@ -157,16 +157,14 @@ div.marca-titulo {
 
 .marca-titulo h3 {
     font-family: Roboto;
-    font-size: 35px;
+    font-size: 2.5em;
     font-weight: bold;
-    padding-bottom: 0px;
     color: blanchedalmond;
-
 }
 
 div.marca-titulo p {
     font-family: Roboto;
-    font-size: 22px;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: justify;
     padding: 0px 100px 0px 120px;
@@ -180,16 +178,14 @@ div.whisky {
     padding: 0px 100px 0px 120px;
 }
 
-div.whisky {
-    margin: 10px 10px;
-    width: auto;
-    text-align: center;
-    padding: 0px 100px 0px 120px;
+div.whisky img {
+    width: 250px;
+    height: 250px;
 }
 
 div.avaliacao {
     font-family: Roboto;
-    font-size: 22px;
+    font-size: 1.7em;
     font-weight: bold;
     text-align: justify;
     padding: 0px 100px 0px 100px;
@@ -200,7 +196,7 @@ div.avaliacao {
     display: none;
   }
   .estrelas label i.fa{
-    font-size: 2.5em
+    font-size: 1em
   }
   .estrelas label i.fa:before {
     content:'\f005';
@@ -213,7 +209,7 @@ div.avaliacao {
 
 div.comentarios {
     font-family: Roboto;
-    font-size: 22px;
+    font-size: 1.7em;
     font-weight: bold;
     text-align: justify;
     padding: 0px 100px 0px 100px;

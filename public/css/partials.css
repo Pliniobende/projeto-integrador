@@ -117,6 +117,20 @@ button.btLoginSignUp {
     cursor: pointer;
 }
 
+a.btLoginSignUp {
+    background-color: rgba(162, 79, 1, 1);
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    margin: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 button.btLoginSignUp:hover {
     text-decoration: underline;
     transition: all 1s;

@@ -13,4 +13,12 @@ app.get('/cadastro', (req, res) => {
     res.render('cadastro')
 })
 
+app.get('/marca/:name', (req, res) => {
+    res.render('marca')
+})
+
+app.get('/avaliacao', (req, res) => {
+    res.render('avaliacao')
+})
+
 app.listen(port, () => console.log(`Server started on port ${port}`))

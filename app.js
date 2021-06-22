@@ -26,4 +26,12 @@ app.post('/api/user/signup', (req, res) => {
     res.send(datas);
 })
 
-app.listen(port, () => console.log(`server listen on port ${port}`));
+app.get('/marca', (req, res) => {
+    res.render('marca')
+})
+
+app.get('/avaliacao', (req, res) => {
+    res.render('avaliacao')
+})
+
+app.listen(port, () => console.log(`Server started on port ${port}`))

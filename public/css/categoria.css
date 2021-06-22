@@ -72,7 +72,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-image: url(categ1.png);
+    background-image: url("../images/categ1.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -80,7 +80,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-image: url(categ2.png);
+    background-image: url("../images/categ2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -88,7 +88,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-image: url(categ3.png);
+    background-image: url("../images/categ3.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -97,7 +97,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-image: url(categ4.png);
+    background-image: url("../images/categ4.png");
     background-repeat: no-repeat;
     background-size: cover;
 }

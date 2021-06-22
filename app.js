@@ -21,4 +21,8 @@ app.get('/avaliacao', (req, res) => {
     res.render('avaliacao')
 })
 
+app.get('/categoria', (req, res) => {
+    res.render('categoria')
+})
+
 app.listen(port, () => console.log(`Server started on port ${port}`))

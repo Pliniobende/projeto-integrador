@@ -19,7 +19,7 @@ div.body {
 div.BigLogo {
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 31px;
 }
 
 button.btLoginSignUp {

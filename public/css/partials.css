@@ -31,90 +31,77 @@ img.LogoG {
     margin-left: 100px;
 }
 
-button.btHome {
+a.btHome {
     background-color: rgba(162, 79, 1, 1);
     color: white;
     font-family: Roboto;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
-    height: 50px;
-    width: 100px;
+    padding: 10px 20px;
     border: none;
     margin: 5px 0px;
+    text-decoration: none;
     cursor: pointer;
 }
 
-button.btHome:hover {
+a.btHome:hover {
     text-decoration: underline;
     transition: all 500ms;
 }
 
-button.btQuemSomos {
+a.btQuemSomos {
     background-color: rgba(221, 132, 0, 1);
     color: white;
     font-family: Roboto;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
-    height: 50px;
-    width: 170px;
+    padding: 10px 20px;
     border: none;
     margin: 5px 0px;
+    text-decoration: none;
     cursor: pointer;
 }
 
-button.btQuemSomos:hover {
+a.btQuemSomos:hover {
     text-decoration: underline;
     transition: all 500ms;
 }
 
-button.btCategorias {
+a.btCategorias {
     background-color: rgba(221, 132, 0, 1);
     color: white;
     font-family: Roboto;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
-    height: 50px;
-    width: 170px;
+    padding: 10px 20px;
     border: none;
     margin: 5px 0px;
+    text-decoration: none;
     cursor: pointer;
 }
 
-button.btCategorias:hover {
+a.btCategorias:hover {
     text-decoration: underline;
     transition: all 1s;
 }
 
-button.btContato {
+a.btContato {
     background-color: rgba(221, 132, 0, 1);
     color: white;
     font-family: Roboto;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
-    height: 50px;
-    width: 170px;
+    padding: 10px 20px;
     border: none;
     margin: 5px 0px;
+    text-decoration: none;
     cursor: pointer;
 }
 
-button.btContato:hover {
+a.btContato:hover {
     text-decoration: underline;
     transition: all 1s;
-}
-
-button.btLoginSignUp {
-    background-color: rgba(162, 79, 1, 1);
-    color: white;
-    font-family: Roboto;
-    font-size: 18px;
-    height: 30px;
-    width: 100px;
-    border: none;
-    margin: 1px;
-    text-transform: uppercase;
-    cursor: pointer;
 }
 
 a.btLoginSignUp {
@@ -122,16 +109,17 @@ a.btLoginSignUp {
     color: white;
     font-family: Roboto;
     font-size: 18px;
-    height: 30px;
+    padding: 5px 0px;
     width: 100px;
     border: none;
     margin: 1px;
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
+    text-align: center;
 }
 
-button.btLoginSignUp:hover {
+a.btLoginSignUp:hover {
     text-decoration: underline;
     transition: all 1s;
 }

@@ -13,7 +13,7 @@ app.get('/cadastro', (req, res) => {
     res.render('cadastro')
 })
 
-app.get('/marca/:name', (req, res) => {
+app.get('/marca', (req, res) => {
     res.render('marca')
 })
 

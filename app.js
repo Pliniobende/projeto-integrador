@@ -26,6 +26,15 @@ app.post('/api/user/signup', (req, res) => {
     res.send(datas);
 })
 
+app.post('/api/user/login', (req, res) => {
+    let datas = req.body;
+    res.send(datas);
+})
+
+app.post('/api/user/recuperacao-senha', (req, res) => {
+    let datas = req.body;
+    res.send(datas);
+})
 app.get('/marca', (req, res) => {
     res.render('marca')
 })
@@ -39,6 +48,13 @@ app.get('/categoria', (req, res) => {
     res.render('categoria')
 })
 
+app.get('/login', (req, res) => {
+    res.render('login')
+})
+
+app.get('/recuperacao-senha', (req, res) => {
+    res.render('recuperacao-senha')
+})
 
 app.listen(port, () => console.log(`Server started on port ${port}`))
 

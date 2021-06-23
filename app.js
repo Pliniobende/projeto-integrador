@@ -1,5 +1,4 @@
 const express = require('express');
-const userController = require('./controllers/user.controller');
 const app = express();
 const port = 8080;
 const userRoutes = require('./routers/user.routes')
@@ -14,12 +13,12 @@ app.get('/', (req, res) => {
     res.render('home');
 })
 
+app.use('/api/v1', userRoutes);
+
 app.post('/contact/support', (req, res) => {
     let datas = req.body;
     res.send(datas);
 })
-
-app.use('/api/v1', userRoutes);
 
 app.post('/api/user/signup', (req, res) => {
     let datas = req.body;
@@ -46,14 +45,6 @@ app.get('/avaliacao', (req, res) => {
 
 app.get('/categoria', (req, res) => {
     res.render('categoria')
-})
-
-app.get('/login', (req, res) => {
-    res.render('login')
-})
-
-app.get('/recuperacao-senha', (req, res) => {
-    res.render('recuperacao-senha')
 })
 
 app.listen(port, () => console.log(`Server started on port ${port}`))

@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
     res.render('home');
 })
 
-app.use('/api/v1', userRoutes);
+app.use('/api/v1/user', userRoutes);
 
 app.post('/contact/support', (req, res) => {
     let datas = req.body;

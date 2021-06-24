@@ -30,6 +30,11 @@ app.get('/marca', (req, res) => {
     res.render('marca')
 })
 
+app.get('/marca/:id', (req, res) => {
+    let produto = req.params.id
+    res.render('marca')
+})
+
 app.get('/avaliacao', (req, res) => {
     res.render('avaliacao')
 })

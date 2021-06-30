@@ -47,5 +47,9 @@ app.get('/categoria', (req, res) => {
     res.render('categoria')
 })
 
+app.get('/quemsomos', (req, res) => {
+    res.render('quemsomos')
+})
+
 app.listen(port, () => console.log(`Server started on port ${port}`))
 

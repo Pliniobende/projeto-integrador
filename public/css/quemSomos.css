@@ -3,26 +3,26 @@ body {
     padding: 0px;
 }
 
-div.Login {
+/* div.meu-login {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
+} */
 
-div.body {
+body {
     background-image: url(../images/QuemSomosHome.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-div.BigLogo {
+/* div.BigLogo {
     display: flex;
     justify-content: center;
     padding-top: 31px;
-}
+} */
 
-button.btLoginSignUp {
+div.meu-login {
     background-color: rgba(162, 79, 1, 1);
     color: white;
     font-family: Roboto;
@@ -40,7 +40,7 @@ button.btLoginSignUp:hover {
     transition: all 1s;
 }
 
-div.QSConteudo h1 {
+div.sobre {
     color: #F5A600;
     padding: 5px 10px;
     font-family: Roboto;
@@ -48,15 +48,15 @@ div.QSConteudo h1 {
     font-weight: bold;
 }
 
-div.QSConteudo h2 {
+/* div.QSConteudo h2 {
     color: #F5A600;
     padding: 5px 10px;
     font-family: Roboto;
     font-size: 40px;
     font-weight: bold;
-}
+} */
 
-div.QSConteudo p {
+div.texto {
     color: #F5A600;
     padding: 5px 10px;
     font-family: Arial, Helvetica, sans-serif;

@@ -8,10 +8,6 @@ const userController = {
     },
     pageRecuperacaoSenha: (req,res) => {
         res.render('recuperacao-senha')
-    
-    },
-    pageAboutUs: (req, res) => {
-        res.render('quem-somos')
     }
 }
 

@@ -9,6 +9,9 @@ const userController = {
     pageRecuperacaoSenha: (req,res) => {
         res.render('recuperacao-senha')
     
+    },
+    pageCategoria: (req, res) =>{
+        res.render('categoria')
     }
 }
 

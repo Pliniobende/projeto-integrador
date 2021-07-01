@@ -8,5 +8,4 @@ router.get('/recuperacao-senha', userController.pageRecuperacaoSenha);
 router.get('/categoria', userController.pageCategoria);
 
 
-
 module.exports = router

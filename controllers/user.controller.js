@@ -12,6 +12,9 @@ const userController = {
     },
     pageCategoria: (req, res) =>{
         res.render('categoria')
+    },
+    conta: (req, res) =>{
+        res.render('minha-conta')
     }
 }
 

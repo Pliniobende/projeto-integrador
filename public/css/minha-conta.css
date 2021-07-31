@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.principal{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #f9f6f7;
+}
+
+.principal{
+    background-color: black ;
+}
+
+header{
+    display: flex;
+}

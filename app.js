@@ -29,6 +29,7 @@ app.get('/marca', (req, res) => {
     res.render('marca')
 })
 
+
 app.get('/avaliacao', (req, res) => {
     res.render('avaliacao')
 })
@@ -41,6 +42,8 @@ app.get('/categoria', (req, res) => {
 app.get('/quemsomos', (req, res) => {
     res.render('quem-somos')
 })
+
+
 
 app.listen(port, () => console.log(`Server started on port ${port}`))
 

@@ -10,6 +10,7 @@ router.get('/recuperacao-senha', userController.pageRecuperacaoSenha);
 router.get('/categoria', userController.pageCategoria);
 router.get('/conta', userController.conta);
 router.get("/editar-perfil", userController.avatar);
+
 router.post("/editar-perfil", upload.single("image"), userController.fotoavatar);
 
 

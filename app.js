@@ -3,11 +3,10 @@ const app = express();
 const port = 8080;
 const userRoutes = require('./routers/user.routes')
 
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
-
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.render('home');
@@ -16,11 +15,6 @@ app.get('/', (req, res) => {
 app.use('/api/v1/user', userRoutes);
 
 app.post('/contact/support', (req, res) => {
-    let datas = req.body;
-    res.send(datas);
-})
-
-app.post('/api/user/signup', (req, res) => {
     let datas = req.body;
     res.send(datas);
 })

@@ -7,6 +7,9 @@ router.get('/login', userController.pageLogin);
 router.get('/recuperacao-senha', userController.pageRecuperacaoSenha);
 router.get('/categoria', userController.pageCategoria);
 router.get('/conta', userController.conta);
+router.get('/editar-perfil', userController.editarperfil);
+router.post('/editar-perfil', userController.uploadfoto);
+
 
 
 module.exports = router

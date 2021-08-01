@@ -10,8 +10,20 @@ const userController = {
         res.render('recuperacao-senha')
     
     },
-    pageCategoria: (req, res) =>{
+    pageCategoria: (req, res) => {
         res.render('categoria')
+    },
+    conta: (req, res) =>{
+        res.render('minha-conta')
+    },
+    editarperfil: (req, res) => {
+        res.render('editar-perfil')
+    },
+    uploadfoto: (req, res) => {
+        let foto;
+        if (req.file) {
+          foto = req.file.path;
+        }
     }
 }
 

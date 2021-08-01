@@ -5,6 +5,7 @@ const userController = require('../controllers/user.controller')
 router.get('/signup', userController.pageSign);
 router.get('/login', userController.pageLogin);
 router.get('/recuperacao-senha', userController.pageRecuperacaoSenha);
+router.get('/categoria', userController.pageCategoria);
 
 
 module.exports = router

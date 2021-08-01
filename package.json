@@ -12,8 +12,12 @@
     "sequelize": "^6.6.5"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "nodemon": "^2.0.7",
     "sequelize-cli": "^6.2.0"
+=======
+    "nodemon": "^2.0.9"
+>>>>>>> c03aac0122ca05aef0f20d676b40f32357caf4dd
   },
   "scripts": {
     "dev": "nodemon app.js"

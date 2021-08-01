@@ -1,13 +1,16 @@
 const express = require('express');
+const session = require('express-session');
+const cookieParser = require('cookie-parser');
 const app = express();
 const port = 8080;
 const userRoutes = require('./routers/user.routes')
 
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
-
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(cookieParser());
+app.use(session({ secret: "wisky"}));
 
 app.get('/', (req, res) => {
     res.render('home');
@@ -21,7 +24,8 @@ app.post('/contact/support', (req, res) => {
 })
 
 app.post('/api/user/signup', (req, res) => {
-    let datas = req.body;
+    let { name, email, password, mobile, categorias, newsletter } = req.body;
+    req.session.user = { name, email, password, mobile, categorias, newsletter};
     res.send(datas);
 })
 

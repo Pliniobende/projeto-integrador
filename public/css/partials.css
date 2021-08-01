@@ -50,7 +50,7 @@ a.btHome:hover {
     transition: all 500ms;
 }
 
-a.btQuemSomos {
+button.btQuemSomos {
     background-color: rgba(221, 132, 0, 1);
     color: white;
     font-family: Roboto;
@@ -63,12 +63,12 @@ a.btQuemSomos {
     cursor: pointer;
 }
 
-a.btQuemSomos:hover {
+button.btQuemSomos:hover {
     text-decoration: underline;
     transition: all 500ms;
 }
 
-a.btCategorias {
+button.btCategorias {
     background-color: rgba(221, 132, 0, 1);
     color: white;
     font-family: Roboto;
@@ -81,12 +81,12 @@ a.btCategorias {
     cursor: pointer;
 }
 
-a.btCategorias:hover {
+button.btCategorias:hover {
     text-decoration: underline;
     transition: all 1s;
 }
 
-a.btContato {
+button.btContato {
     background-color: rgba(221, 132, 0, 1);
     color: white;
     font-family: Roboto;
@@ -99,7 +99,7 @@ a.btContato {
     cursor: pointer;
 }
 
-a.btContato:hover {
+button.btContato:hover {
     text-decoration: underline;
     transition: all 1s;
 }

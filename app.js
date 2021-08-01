@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const port = 8080;
-const userRoutes = require('./routers/user.routes')
+const userRoutes = require('./routers/user.routes');
+const contactRoutes = require('./routers/contact.routes');
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -13,11 +14,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/v1/user', userRoutes);
-
-app.post('/contact/support', (req, res) => {
-    let datas = req.body;
-    res.send(datas);
-})
+app.use('/contact', contactRoutes);
 
 app.post('/api/user/login', (req, res) => {
     let datas = req.body;

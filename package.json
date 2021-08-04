@@ -3,31 +3,34 @@
   "version": "1.0.0",
   "description": "ProjetoIntegrador - Grupo 1",
   "main": "app.js",
-
   "dependencies": {
+    "cookie-parser": "^1.4.5",
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.5"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+<<<<<<< HEAD
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^6.2.0"
+=======
+    "nodemon": "^2.0.9"
+>>>>>>> c03aac0122ca05aef0f20d676b40f32357caf4dd
   },
   "scripts": {
-
     "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Pliniobende/projeto-integrador.git"
   },
-
   "keywords": [],
-
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Pliniobende/projeto-integrador/issues"
   },
-
   "homepage": "https://github.com/Pliniobende/projeto-integrador#readme"
-
 }

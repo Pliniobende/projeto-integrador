@@ -25,17 +25,15 @@ app.post('/api/user/recuperacao-senha', (req, res) => {
     let datas = req.body;
     res.send(datas);
 })
+
 app.get('/marca', (req, res) => {
     res.render('marca')
 })
 
-<<<<<<< HEAD
 app.get('/marca/:id', (req, res) => {
     let produto = req.params.id
     res.render('marca')
 })
-=======
->>>>>>> dfa89766eb11ee1fd377daac46d80b3bdd090d00
 
 app.get('/avaliacao', (req, res) => {
     res.render('avaliacao')

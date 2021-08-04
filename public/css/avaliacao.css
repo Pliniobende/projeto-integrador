@@ -51,6 +51,7 @@ div.tipos {
     margin: 70px 10px;
     justify-content: space-around;
     width: 100%;
+    align-items: center;
 }
 
 div.tipos div {cursor: pointer;}
@@ -67,14 +68,6 @@ div.whisky input:hover {
 div.Categorias input {
     height: 100px;
     object-fit: cover;
-}
-
-div.Categorias p {
-    font-family: Roboto;
-    font-size: 35px;
-    font-weight: bold;
-    padding: 5px;
-    color: blanchedalmond;
 }
 
 

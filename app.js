@@ -25,10 +25,15 @@ app.post('/api/user/recuperacao-senha', (req, res) => {
     let datas = req.body;
     res.send(datas);
 })
+
 app.get('/marca', (req, res) => {
     res.render('marca')
 })
 
+app.get('/marca/:id', (req, res) => {
+    let { id } = req.params;
+    res.render('marca', { id })
+})
 
 app.get('/avaliacao', (req, res) => {
     res.render('avaliacao')

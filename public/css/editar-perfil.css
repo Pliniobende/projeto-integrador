@@ -16,7 +16,6 @@ body{
     height: 150px;
 }
 
-
 .principal{
     background-color: black;
     display: flex;
@@ -39,6 +38,7 @@ body{
     margin: 15px;
     cursor: pointer;
 }
+
 .btn-save {
     background-color: #b88007;
     text-decoration: underline;

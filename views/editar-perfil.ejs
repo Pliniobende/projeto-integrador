@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="/css/categoria.css">
+    <link rel="stylesheet" href="/css/editar-perfil.css">
     <link rel="stylesheet" href="/css/partials.css">
     <title>Categorias</title>
 </head>
@@ -17,10 +17,14 @@
 
     </header>
     
+
     <div class="principal">
-        <div class="BigLogo">
-            <img src="/images/Logo.png" alt="Logo" height="120px" width="120px">
+        <div class="profile">
+            <img src="/images/profile.png" class="profile-pic" alt="Profile">
         </div>
+
+    
+        
         <div class="title">
             <h2>Perfil</h2>
             <table style="width:100%">
@@ -50,9 +54,10 @@
                 <th>
             </table>
             <form method="POST" action="/api/v1/user/editar-perfil" enctype="multipart/form-data">
-                <button type="submit">Salvar Alterações</button>
+               
                 <label>Foto:</label>
-                <input type="file" name="image" accept="image/*" placeholder="Insira seu avatar"/>
+                <input type="file" class="btn-edit" name="image" accept="image/*" placeholder="Insira seu avatar"/>
+                <button type="submit" class="btn-save">Salvar Alterações</button>
 
             </form>
         </div>

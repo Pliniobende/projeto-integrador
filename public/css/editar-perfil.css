@@ -10,11 +10,10 @@ body{
     color: #f9f6f7;
 }
 
-div.BigLogo {
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
- 
+.profile-pic{
+    margin: 10px;
+    width: 200px;
+    height: 150px;
 }
 
 .principal{
@@ -26,7 +25,7 @@ div.BigLogo {
     
 }
 
-.btn-edit{
+.btn-save{
     background-color: #F5A600;
     color: black;
     font-family: Roboto;
@@ -35,13 +34,11 @@ div.BigLogo {
     text-transform: uppercase;
     border: none;
     /* border-radius: 5px; */
-    padding: 10px 15px;
-    margin-top: 10px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    padding: 10px;
+    margin: 15px;
     cursor: pointer;
 }
-.btn-edit {
+.btn-save {
     background-color: #b88007;
     text-decoration: underline;
 }

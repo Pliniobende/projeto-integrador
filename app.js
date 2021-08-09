@@ -14,6 +14,18 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/v1/user', userRoutes);
+
+
+
+app.post('/contact/support', (req, res) => {
+    let datas = req.body;
+    res.send(datas);
+})
+
+app.post('/api/user/signup', (req, res) => {
+    let datas = req.body;
+    res.send(datas);
+})
 app.use('/contact', contactRoutes);
 
 app.post('/api/user/login', (req, res) => {
@@ -25,15 +37,19 @@ app.post('/api/user/recuperacao-senha', (req, res) => {
     let datas = req.body;
     res.send(datas);
 })
+
 app.get('/marca', (req, res) => {
     res.render('marca')
 })
 
+app.get('/marca/:id', (req, res) => {
+    let { id } = req.params;
+    res.render('marca', { id })
+})
 
 app.get('/avaliacao', (req, res) => {
     res.render('avaliacao')
 })
-
 
 app.get('/categoria', (req, res) => {
     res.render('categoria')
@@ -42,7 +58,6 @@ app.get('/categoria', (req, res) => {
 app.get('/quemsomos', (req, res) => {
     res.render('quem-somos')
 })
-
 
 
 app.listen(port, () => console.log(`Server started on port ${port}`))

@@ -13,21 +13,16 @@ app.get('/', (req, res) => {
     res.render('home');
 })
 
-app.use('/api/v1/user', userRoutes);
+app.use('/user', userRoutes);
 
 app.use('/contact', contactRoutes);
 
-app.post('/api/user/signup', (req, res) => {
+app.post('/user/login', (req, res) => {
     let datas = req.body;
     res.send(datas);
 })
 
-app.post('/api/user/login', (req, res) => {
-    let datas = req.body;
-    res.send(datas);
-})
-
-app.post('/api/user/recuperacao-senha', (req, res) => {
+app.post('/user/recuperacao-senha', (req, res) => {
     let datas = req.body;
     res.send(datas);
 })

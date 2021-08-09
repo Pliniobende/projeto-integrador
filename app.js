@@ -15,18 +15,12 @@ app.get('/', (req, res) => {
 
 app.use('/api/v1/user', userRoutes);
 
-
-
-app.post('/contact/support', (req, res) => {
-    let datas = req.body;
-    res.send(datas);
-})
+app.use('/contact', contactRoutes);
 
 app.post('/api/user/signup', (req, res) => {
     let datas = req.body;
     res.send(datas);
 })
-app.use('/contact', contactRoutes);
 
 app.post('/api/user/login', (req, res) => {
     let datas = req.body;

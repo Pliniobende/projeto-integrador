@@ -1,6 +1,6 @@
 const config = {
     username: 'root',
-    password: '123456',
+    password: 'Greg@1234',
     database: 'wisky-club',
     host: 'localhost',
     dialect: 'mysql'

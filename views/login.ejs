@@ -21,7 +21,7 @@
             <h2>Login</h2>
         </div>
         <div class="Datas">
-            <form method="POST" action="/api/user/login">
+            <form method="POST" action="/api/v1/user/login">
                 
                 <div>
                     <label class="label1" for="email"><b>Email:</b>*</label>
@@ -33,6 +33,9 @@
                     <br>
                     <input class="input1" type="password" name="password" id="password" placeholder="(Digite sua Senha)"required>
                 </div>
+                    <% if (erro) { %>
+                     <span><%= erro %>  </span>
+                    <% } %> 
                 <!-- coloquei o botao de enviar (antigo submit do cadastro) na mesma div lembrar minha senha  -->
                 <div>
                     <button class="btform" type="submit">Enviar</button>

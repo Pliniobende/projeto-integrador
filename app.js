@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 
 app.use('/user', userRoutes);
 
-app.use('/contact', contactRoutes);
+
 
 
 app.post('/contact/support', (req, res) => {

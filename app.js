@@ -15,7 +15,6 @@ app.get('/', (req, res) => {
 
 app.use('/user', userRoutes);
 
-
 app.use('/contact', contactRoutes);
 
 app.post('/user/login', (req, res) => {

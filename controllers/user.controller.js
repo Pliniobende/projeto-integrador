@@ -44,16 +44,27 @@ const userController = {
     createUser: async (req, res) => {
         try {
             let { name, email, password, mobile, categoria, newsletter} = req.body
-            User.create({
-                userName: name,
-                email: email,
-                userPassword: password,
-                mobile: mobile,
-                categoria: categoria,
-                newsletter: newsletter
-            })
+            
+            let checkEmail = await User.findOne({ where: { email } })
 
-            res.redirect('/')
+            if (checkEmail){
+                console.log('ja tem')
+            } else {
+                try {
+                    await User.create({
+                        userName: name,
+                        email: email,
+                        userPassword: password,
+                        mobile: mobile,
+                        categoria: categoria,
+                        newsLetter: newsletter
+                    })
+        
+                    res.redirect('/')
+                } catch(error) {
+                    console.log(`Error: ${error}`)
+                }
+            }
         } catch(error) {
             console.log(`Error: ${error}`)
         }

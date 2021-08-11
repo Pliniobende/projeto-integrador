@@ -58,6 +58,5 @@ app.get('/quemsomos', (req, res) => {
     res.render('quem-somos')
 })
 
-
 app.listen(process.env.PORT, () => console.log(`Server started on port ${process.env.PORT}`))
 

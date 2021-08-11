@@ -7,6 +7,7 @@ const bcrypt = require('bcrypt');
 
 const userRoutes = require('./routers/user.routes');
 const contactRoutes = require('./routers/contact.routes');
+const marcaRoutes = require('./routers/marca.routes')
 
 app.use(session({
     secret:"secret",
@@ -37,9 +38,7 @@ app.post('/user/recuperacao-senha', (req, res) => {
     res.send(datas);
 })
 
-app.get('/marca', (req, res) => {
-    res.render('marca')
-})
+app.use('/marca', marcaRoutes);
 
 app.get('/marca/:id', (req, res) => {
     let { id } = req.params;

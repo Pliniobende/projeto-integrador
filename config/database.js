@@ -1,7 +1,9 @@
+require('dotenv').config();
+
 const config = {
-    username: 'root',
-    password: 'Greg@1234',
-    database: 'wisky-club',
+    username: process.env.username,
+    password: process.env.password,
+    database: process.env.database,
     host: 'localhost',
     dialect: 'mysql'
 }

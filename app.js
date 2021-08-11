@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
-const port = 8080;
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const bcrypt = require('bcrypt');
+require('dotenv').config();
 
 const userRoutes = require('./routers/user.routes');
 const contactRoutes = require('./routers/contact.routes');
@@ -59,5 +59,5 @@ app.get('/quemsomos', (req, res) => {
 })
 
 
-app.listen(port, () => console.log(`Server started on port ${port}`))
+app.listen(process.env.PORT, () => console.log(`Server started on port ${process.env.PORT}`))
 

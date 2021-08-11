@@ -8,6 +8,7 @@ const upload = multer( { dest: 'public/images' } );
 router.get('/signup', userController.pageSign);
 router.post('/signup', userController.createUser);
 router.get('/login', userController.pageLogin);
+router.post('/login', userController.loginUser);
 router.get('/recuperacao-senha', userController.pageRecuperacaoSenha);
 router.get('/categoria', userController.pageCategoria);
 router.get('/conta', userController.conta);

@@ -6,7 +6,7 @@ const userController = {
     },
 
     pageLogin: (req,res) => {
-        res.render('login')
+        res.render('login', {erro: null})
     },
 
     pageRecuperacaoSenha: (req,res) => {
@@ -39,6 +39,29 @@ const userController = {
     index: async (req, res) => {
         let users = await User.findAll()
         res.send(users)
+    },
+
+    loginUser: async (req,res)=>{
+        let {email, senha} = req.body;
+        let userSaved = await User.findOne({
+            where: {
+                email
+            }
+        })
+        if(userSaved){
+            if(!bcrypt.compareSync(senha, userSaved.senha)){
+                res.render("login", {erro: "Senha Inválida"})
+            }else{
+                req.session.user = userSaved
+                res.redirect('/')
+            }
+        }else{
+            res.render("login", {erro: "Usuário não encontrado"})
+        }
+       
+        
+        
+        
     },
     
     createUser: async (req, res) => {

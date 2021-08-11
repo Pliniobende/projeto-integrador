@@ -3,6 +3,7 @@ const app = express();
 const port = 8080;
 const userRoutes = require('./routers/user.routes');
 const contactRoutes = require('./routers/contact.routes');
+const marcaRoutes = require('./routers/marca.routes')
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -27,9 +28,7 @@ app.post('/user/recuperacao-senha', (req, res) => {
     res.send(datas);
 })
 
-app.get('/marca', (req, res) => {
-    res.render('marca')
-})
+app.use('/marca', marcaRoutes);
 
 app.get('/marca/:id', (req, res) => {
     let { id } = req.params;

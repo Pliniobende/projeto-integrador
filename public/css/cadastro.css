@@ -10,6 +10,13 @@ div.body {
     background-size: cover;
 }
 
+span.erro {
+    color: red;
+    background-color: black;
+    padding: 10px;
+    font-size: 20px;
+}
+
 div.BigLogo {
     display: flex;
     justify-content: center;

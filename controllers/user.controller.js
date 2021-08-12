@@ -2,7 +2,7 @@ const { User } = require('../models')
 
 const userController = {
     pageSign: (req, res) => {
-        res.render('cadastro')
+        res.render('cadastro', {erro: null})
     },
 
     pageLogin: (req,res) => {
@@ -57,11 +57,7 @@ const userController = {
             }
         }else{
             res.render("login", {erro: "Usuário não encontrado"})
-        }
-       
-        
-        
-        
+        }  
     },
     
     createUser: async (req, res) => {
@@ -71,7 +67,7 @@ const userController = {
             let checkEmail = await User.findOne({ where: { email } })
 
             if (checkEmail){
-                console.log('ja tem')
+                res.status(404).render('cadastro', {erro: "Usuário/e-mail já cadastro!"})
             } else {
                 try {
                     await User.create({

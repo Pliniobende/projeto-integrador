@@ -19,6 +19,12 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+app.get('/chave', (req, res) => {
+    let { senha } = req.body;
+    let novaSenha = bcrypt.hashSync(senha, 15);
+    res.send({novaSenha});
+})
+
 
 app.get('/', (req, res) => {
     res.render('home');

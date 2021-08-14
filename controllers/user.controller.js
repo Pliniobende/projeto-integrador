@@ -1,12 +1,13 @@
 const { User } = require('../models')
+const bcrypt = require('bcrypt');
 
 const userController = {
     pageSign: (req, res) => {
-        res.render('cadastro')
+        res.render('cadastro', {erro: null})
     },
 
     pageLogin: (req,res) => {
-        res.render('login')
+        res.render('login', {erro: null})
     },
 
     pageRecuperacaoSenha: (req,res) => {
@@ -40,20 +41,51 @@ const userController = {
         let users = await User.findAll()
         res.send(users)
     },
+
+    loginUser: async (req,res)=>{
+        let {email, senha} = req.body;
+        let userSaved = await User.findOne({
+            where: {
+                email
+            }
+        })
+        if(userSaved){
+            if(bcrypt.compareSync(senha, userSaved.userPassword)){
+                req.session.user = userSaved
+                res.redirect('/')                
+            }else{
+                res.render("login", {erro: "Senha Inválida"})
+            }
+        }else{
+            res.render("login", {erro: "Usuário não encontrado"})
+        }  
+    },
     
     createUser: async (req, res) => {
         try {
             let { name, email, password, mobile, categoria, newsletter} = req.body
-            User.create({
-                userName: name,
-                email: email,
-                userPassword: password,
-                mobile: mobile,
-                categoria: categoria,
-                newsletter: newsletter
-            })
+            let senha = bcrypt.hashSync(password, 15);
+            
+            let checkEmail = await User.findOne({ where: { email } })
 
-            res.redirect('/')
+            if (checkEmail){
+                res.status(404).render('cadastro', {erro: "Usuário/e-mail já cadastro!"})
+            } else {
+                try {
+                    await User.create({
+                        userName: name,
+                        email: email,
+                        userPassword: senha,
+                        mobile: mobile,
+                        categoria: categoria,
+                        newsLetter: newsletter
+                    })
+        
+                    res.redirect('/')
+                } catch(error) {
+                    console.log(`Error: ${error}`)
+                }
+            }
         } catch(error) {
             console.log(`Error: ${error}`)
         }

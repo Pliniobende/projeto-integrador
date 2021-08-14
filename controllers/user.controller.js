@@ -1,8 +1,9 @@
 const { User } = require('../models')
+const bcrypt = require('bcrypt');
 
 const userController = {
     pageSign: (req, res) => {
-        res.render('cadastro')
+        res.render('cadastro', {erro: null})
     },
 
     pageLogin: (req,res) => {
@@ -49,35 +50,32 @@ const userController = {
             }
         })
         if(userSaved){
-            if(!bcrypt.compareSync(senha, userSaved.senha)){
-                res.render("login", {erro: "Senha Inválida"})
-            }else{
+            if(bcrypt.compareSync(senha, userSaved.userPassword)){
                 req.session.user = userSaved
-                res.redirect('/')
+                res.redirect('/')                
+            }else{
+                res.render("login", {erro: "Senha Inválida"})
             }
         }else{
             res.render("login", {erro: "Usuário não encontrado"})
-        }
-       
-        
-        
-        
+        }  
     },
     
     createUser: async (req, res) => {
         try {
             let { name, email, password, mobile, categoria, newsletter} = req.body
+            let senha = bcrypt.hashSync(password, 15);
             
             let checkEmail = await User.findOne({ where: { email } })
 
             if (checkEmail){
-                console.log('ja tem')
+                res.status(404).render('cadastro', {erro: "Usuário/e-mail já cadastro!"})
             } else {
                 try {
                     await User.create({
                         userName: name,
                         email: email,
-                        userPassword: password,
+                        userPassword: senha,
                         mobile: mobile,
                         categoria: categoria,
                         newsLetter: newsletter

@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Contact.init({
-    nome: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false
     },
@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false
     },
-    mensagem: {
+    message: {
       type: DataTypes.STRING,
       allowNull: false
     },

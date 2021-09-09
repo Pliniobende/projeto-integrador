@@ -56,6 +56,12 @@ const userController = {
             }else{
                 res.render("login", {erro: "Senha Inválida"})
             }
+            // if(!bcrypt.compareSync(senha, userSaved.senha)){
+            //     res.render("login", {erro: "Senha Inválida"})
+            // }else{
+            //     req.session.user = userSaved
+            //     res.redirect('/')
+            // }
         }else{
             res.render("login", {erro: "Usuário não encontrado"})
         }  

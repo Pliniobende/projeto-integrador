@@ -34,11 +34,6 @@ app.use('/user', userRoutes);
 
 app.use('/contact', contactRoutes);
 
-// app.post('/api/user/login', (req, res) => {
-//     let datas = req.body;
-//     res.send(datas);
-// })
-
 app.post('/user/recuperacao-senha', (req, res) => {
     let datas = req.body;
     res.send(datas);

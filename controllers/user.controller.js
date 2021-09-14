@@ -50,12 +50,18 @@ const userController = {
             }
         })
         if(userSaved){
-            if(bcrypt.compareSync(senha, userSaved.userPassword)){
+            if(bcrypt.compareSync(senha, userSaved.password)){
                 req.session.user = userSaved
                 res.redirect('/')                
             }else{
                 res.render("login", {erro: "Senha Inválida"})
             }
+            // if(!bcrypt.compareSync(senha, userSaved.senha)){
+            //     res.render("login", {erro: "Senha Inválida"})
+            // }else{
+            //     req.session.user = userSaved
+            //     res.redirect('/')
+            // }
         }else{
             res.render("login", {erro: "Usuário não encontrado"})
         }  
@@ -63,7 +69,7 @@ const userController = {
     
     createUser: async (req, res) => {
         try {
-            let { name, email, password, mobile, categoria, newsletter} = req.body
+            let { name, email, password, mobile, newsletter} = req.body
             let senha = bcrypt.hashSync(password, 15);
             
             let checkEmail = await User.findOne({ where: { email } })
@@ -73,12 +79,11 @@ const userController = {
             } else {
                 try {
                     await User.create({
-                        userName: name,
-                        email: email,
-                        userPassword: senha,
-                        mobile: mobile,
-                        categoria: categoria,
-                        newsLetter: newsletter
+                        name,
+                        email,
+                        password: senha,
+                        mobile,
+                        newsletter
                     })
         
                     res.redirect('/')

@@ -34,11 +34,6 @@ app.use('/user', userRoutes);
 
 app.use('/contact', contactRoutes);
 
-// app.post('/api/user/login', (req, res) => {
-//     let datas = req.body;
-//     res.send(datas);
-// })
-
 app.post('/user/recuperacao-senha', (req, res) => {
     let datas = req.body;
     res.send(datas);
@@ -62,7 +57,6 @@ app.get('/categoria', (req, res) => {
 app.get('/quemsomos', (req, res) => {
     res.render('quem-somos')
 })
-
 
 app.listen(process.env.PORT, () => console.log(`Server started on port ${process.env.PORT}`))
 

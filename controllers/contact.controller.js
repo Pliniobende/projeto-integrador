@@ -5,9 +5,9 @@ const contactController = {
         const { nome, email, mensagem, } = req.body
         try {
             Contact.create({
-                nome: nome,
+                name: nome,
                 email: email,
-                mensagem: mensagem,
+                message: mensagem,
                 replied: false
             })
 

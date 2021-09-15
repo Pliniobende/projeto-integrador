@@ -7,49 +7,58 @@
     <title>Clube Whisky</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <script src="https://kit.fontawesome.com/a6aed6fe1a.js"></script>
     <link rel="stylesheet" href="css/home1.css">
+    <link rel="stylesheet" href="css/partials.css">
 </head>
 <body>
     <header>
-    <div class="menu">
-        <div class="logo">
-        <img src="/images/Logo1.png" alt="Logo Club Whisky">
-        </div>
-        <div class="mainmenu">
-            <a href="/" class="btHome">Home</a>
-            <a href="/quemsomos" class="btManifesto">Manifesto</a>
-            <a href="/api/v1/categorias" class="btCategorias">Categorias</a>
-            <a href="/api/v1/contato" class="btContato">Contato</a>
-        </div>
-        <div class="user">
-            <img src="/images/user.png" alt="Usuário">
-        </div>
-    </div>
     </header>
+  
+        <nav id="main-nav">
+          <img src="/images/Logo1.png" alt="logo">
+            <ul class="links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Manifesto</a></li>
+              <li>
+                <a href="#" class="desktop-link">Categorias</a>
+                <ul class= "submenu">
+                  <li><a href="#">Bourbon</a></li>
+                  <li><a href="#">Straight Bourbon</a></li>
+                  <li><a href="#">Rye</a></li>
+                  <li><a href="#">Whisky Escocês</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </div>
+          <label for="user" class="user-icon"><i class="fas fa-user"></i></label>
+        </nav>
+
     <section>
-        <div class="categorias">
-            <div class="imagcategoria active">
+        <div class="slider">
+            <div class="slide active">
                 <img src="images/Categoria1.jpeg" alt="imgCat1">
                 <div class="info">
                     <h2>Bourbon</h2>
                     <p>O bourbon é um whiskey americano feito de grãos maltados, dos quais no mínimo 51% da composição é milho. As regras que regem o bourbon são menos rígidas que as do Escocês, porém ele deve ser totalmente fabricado nos Estados Unidos para ser qualificado como Bourbon</p>
                 </div>
             </div>
-            <div class="imagcategoria">
+            <div class="slide">
                 <img src="images/Categoria2.jpeg" alt="imgCat2">
                 <div class="info">
                     <h2>Straight Bourbon</h2>
                     <p>Esse é um bourbon de um estado Americano, Kentucky por exemplo, que foi envelhecido por no mínimo 2 anos e não contém aditivos, tais como sabores ou corantes.</p>
                 </div>
             </div>
-            <div class="imagcategoria">
+            <div class="slide">
                 <img src="images/Categoria3.jpeg" alt="imgCat3">
                 <div class="info">
                     <h2>Rye</h2>
                     <p>O rye é fabricado especialmente na América do Norte. Nos Estados Unidos, ele deve ser fermentado a partir de uma mistura de grãos maltados que contenha pelo menos 51% de centeio. As regras sobre o rye canadense são bem menos rígidas e a bebida pode conter muito menos do que 51% de centeio.</p>
                 </div>
             </div>
-            <div class="imagcategoria">
+            <div class="slide">
                 <img src="images/Categoria4.jpg" alt="imgCat4">
                 <div class="info">
                     <h2>Whiskey Escocês</h2>
@@ -57,10 +66,16 @@
                 </div>
             </div>
             <div class="navigation">
-                <div class="btn active"></div>
-                <div class="btn"></div>
-                <div class="btn"></div>
-                <div class="btn"></div>
+                <i class="fas fa-chevron-left prev-btn"></i>
+                <i class="fas fa-chevron-right next-btn"></i>
+              </div>
+              <div class="navigation-visibility">
+                <div class="slide-icon active"></div>
+                <div class="slide-icon"></div>
+                <div class="slide-icon"></div>
+                <div class="slide-icon"></div>
+                <div class="slide-icon"></div>
+              </div>
             </div>
         </div>
     </section>
@@ -73,6 +88,7 @@
             <p>Sabemos quem somos e para que viemos!</p>
         </div>
     </section>
+   
     <%- include('./partials/_footer') %>
 
     <div class="copyright">

@@ -2,10 +2,10 @@ require('dotenv').config();
 
 const config = {
     username: process.env.username,
-    password: '',
+    password: process.env.password,
     database: process.env.database,
-    host: process.env.host,
-    dialect: process.env.dialect
+    host: 'localhost',
+    dialect: "mysql"
 }
 
 module.exports = config;

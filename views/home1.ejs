@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube Whisky</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://kit.fontawesome.com/a6aed6fe1a.js"></script>
+    <link rel="stylesheet" href="css/home1.css">
+    <link rel="stylesheet" href="css/partials.css">
+</head>
+<body>
+    <header>
+    </header>
+  
+        <nav id="main-nav">
+          <img src="/images/Logo1.png" alt="logo">
+            <ul class="links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Manifesto</a></li>
+              <li>
+                <a href="#" class="desktop-link">Categorias</a>
+                <ul class= "submenu">
+                  <li><a href="#">Bourbon</a></li>
+                  <li><a href="#">Straight Bourbon</a></li>
+                  <li><a href="#">Rye</a></li>
+                  <li><a href="#">Whisky Escocês</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </div>
+          <label for="user" class="user-icon"><i class="fas fa-user"></i></label>
+        </nav>
+
+    <section>
+        <div class="slider">
+            <div class="slide active">
+                <img src="images/Categoria1.jpeg" alt="imgCat1">
+                <div class="info">
+                    <h2>Bourbon</h2>
+                    <p>O bourbon é um whiskey americano feito de grãos maltados, dos quais no mínimo 51% da composição é milho. As regras que regem o bourbon são menos rígidas que as do Escocês, porém ele deve ser totalmente fabricado nos Estados Unidos para ser qualificado como Bourbon</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/Categoria2.jpeg" alt="imgCat2">
+                <div class="info">
+                    <h2>Straight Bourbon</h2>
+                    <p>Esse é um bourbon de um estado Americano, Kentucky por exemplo, que foi envelhecido por no mínimo 2 anos e não contém aditivos, tais como sabores ou corantes.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/Categoria3.jpeg" alt="imgCat3">
+                <div class="info">
+                    <h2>Rye</h2>
+                    <p>O rye é fabricado especialmente na América do Norte. Nos Estados Unidos, ele deve ser fermentado a partir de uma mistura de grãos maltados que contenha pelo menos 51% de centeio. As regras sobre o rye canadense são bem menos rígidas e a bebida pode conter muito menos do que 51% de centeio.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/Categoria4.jpg" alt="imgCat4">
+                <div class="info">
+                    <h2>Whiskey Escocês</h2>
+                    <p>Também conhecido como Scotch, são produzidos apenas na Escócia. O termo Scotch é protegido por legislação e só pode ser usado para bebidas produzidas no país, assim como a cachaça no Brasil.</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <i class="fas fa-chevron-left prev-btn"></i>
+                <i class="fas fa-chevron-right next-btn"></i>
+              </div>
+              <div class="navigation-visibility">
+                <div class="slide-icon active"></div>
+                <div class="slide-icon"></div>
+                <div class="slide-icon"></div>
+                <div class="slide-icon"></div>
+                <div class="slide-icon"></div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="manifesto">
+            <h2>Manifesto</h2>
+            <p>Seguimos na contra-mão, liberdade é o que nos move! Ser o que quiser, fazer o que quiser! Sem medos, sem preconceitos.</p>
+            <p>Façamos nossas suas próprias regras para quebrá-las sempre que preciso. Deixemos para trás tudo o que não é essencial.</p>
+            <p>Seguimos firmes, sempre em frente! Com um copo na mão e sede no olhar!</p>
+            <p>Sabemos quem somos e para que viemos!</p>
+        </div>
+    </section>
+   
+    <%- include('./partials/_footer') %>
+
+    <div class="copyright">
+        <p class="copyright">Copyrights 2021 - All rights reserved to Clube do Whisky</p>
+    </div>
+    <script type="text/javascript" src="javascript/script.js"></script>
+</body>
+</html>

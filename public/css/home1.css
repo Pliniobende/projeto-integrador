@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+#main-nav img {
+    width: 80px;
+    height: 80px;
+    margin: 50px;
+}
+#main-nav {
+    color: #f6f7f8;
+    background: #0a0a0a;
+    height: 100px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    transition: background 0.4s;
+  }
+#main-nav a {
+    color: #f6f7f8;
+    background: #0a0a0a;
+    padding-right: 100px;
+    padding-left: 100px;
+    height: 64px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    transition: background 0.4s;
+  }
+
+  #main-nav a:hover {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    color:black;
+  }
+  
+  #main-nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  #main-nav li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  
+  #main-nav li:hover .submenu > li {
+    display: block;
+    flex-direction: column;
+    top: 0px;
+    z-index: 3;
+  }
+  
+  .submenu li {
+    display: none;
+    position: absolute;
+    top: 0px;
+  }
+  
+  .submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .submenu li {
+    position: relative;
+  }
+  
+
+  /* ****  */
+  .slider{
+    position: relative;
+    background: #000116;
+    width: 80vw;
+    min-height: 500px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  
+  .slider .slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 0 50%);
+
+  }
+  
+  .slider .slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+  }
+  
+  .slider .slide img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slider .slide .info{
+    position: absolute;
+    color: ivory;
+    background: rgba(255, 255, 255, 0.3);
+    width: 75%;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+  }
+  
+  .slider .slide .info h2{
+    font-size: 2em;
+    font-weight: 800;
+    background: none;
+    color: #222;
+  }
+  
+  .slider .slide .info p{
+    font-size: 1em;
+    font-weight: 400;
+  }
+  
+  .navigation{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slider:hover .navigation{
+    opacity: 1;
+  }
+  
+  .prev-btn, .next-btn{
+    z-index: 999;
+    font-size: 2em;
+    color: #222;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prev-btn{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  
+  .next-btn{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  
+  .navigation-visibility{
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navigation-visibility .slide-icon{
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.5);
+    width: 20px;
+    height: 10px;
+    transform: translateY(-50px);
+    margin: 0 6px;
+    border-radius: 2px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+  }
+  
+  .navigation-visibility .slide-icon.active{
+    background: #32353b;
+  }
+  
+  .manifesto{
+      display: flex;
+      flex-direction: column;
+      margin-top: 80px;
+      margin-bottom: 80px;
+      justify-content: center;
+      align-items: center;
+      color: ivory;
+
+  }
+
+ 
+
+  .manifesto p{
+      line-height: 2;
+      padding-bottom: 10px;
+  }
+
+  .manifesto h2{
+    line-height: 2;
+    font-size: 2em;
+}
+
+
+
+
+
+  
+  @media (max-width: 900px){
+    .slider{
+      width: 100%;
+    }
+  
+    .slider .slide .info{
+      position: relative;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  div.rodape {
+    background-color: rgb(103, 103, 103);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+       
+  
+  @media (max-width: 500px){
+    .slider .slide .info h2{
+      font-size: 1.8em;
+      line-height: 40px;
+    }
+  
+    .slider .slide .info p{
+      font-size: 0.9em;
+    }
+  }
+  }
+
+
+
+
+
+ 

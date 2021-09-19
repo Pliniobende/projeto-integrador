@@ -3,8 +3,8 @@ const router = Router()
 const avaliacaoController = require('../controllers/avaliacao.controller')
 
 
-router.get('/avaliacao', avaliacaoController.avaliacao);
-router.get('/avaliacao/:id', avaliacaoController.categoria);
+// router.get('/', avaliacaoController.avaliacao);
+router.get('/:id', avaliacaoController.categoria);
 
 
 module.exports = router;

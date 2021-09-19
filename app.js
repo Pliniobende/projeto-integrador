@@ -49,10 +49,10 @@ app.use('/marca', marcaRoutes);
 
 app.use('/avaliacao', avaliacaoRoutes);
 
-app.get('/avaliacao/:id', (req, res) => {
-    let { id } = req.params;
-    res.render('avaliacao', { id })
-})
+// app.get('/avaliacao/:id', (req, res) => {
+//     let { id } = req.params;
+//     res.render('avaliacao', { id })
+// })
 
 // app.get('/avaliacao', (req, res) => {
 //     res.render('avaliacao')

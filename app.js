@@ -8,6 +8,7 @@ require('dotenv').config();
 const userRoutes = require('./routers/user.routes');
 const contactRoutes = require('./routers/contact.routes');
 const marcaRoutes = require('./routers/marca.routes')
+const avaliacaoRoutes = require('./routers/avaliacao.routes')
 
 app.use(session({
     secret:"secret",
@@ -41,14 +42,21 @@ app.post('/user/recuperacao-senha', (req, res) => {
 
 app.use('/marca', marcaRoutes);
 
-app.get('/marca/:id', (req, res) => {
+// app.get('/marca/:id', (req, res) => {
+//     let { id } = req.params;
+//     res.render('marca', { id })
+// })
+
+app.use('/avaliacao', avaliacaoRoutes);
+
+app.get('/avaliacao/:id', (req, res) => {
     let { id } = req.params;
-    res.render('marca', { id })
+    res.render('avaliacao', { id })
 })
 
-app.get('/avaliacao', (req, res) => {
-    res.render('avaliacao')
-})
+// app.get('/avaliacao', (req, res) => {
+//     res.render('avaliacao')
+// })
 
 app.get('/categoria', (req, res) => {
     res.render('categoria')

@@ -69,7 +69,7 @@ const userController = {
     
     createUser: async (req, res) => {
         try {
-            let { name, email, password, mobile, newsletter} = req.body
+            let { name, email, password, mobile, newsLetter} = req.body
             let senha = bcrypt.hashSync(password, 15);
             
             let checkEmail = await User.findOne({ where: { email } })
@@ -83,7 +83,7 @@ const userController = {
                         email,
                         password: senha,
                         mobile,
-                        newsletter
+                        newsLetter
                     })
         
                     res.redirect('/')

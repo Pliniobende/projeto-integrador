@@ -10,8 +10,14 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
+<<<<<<< HEAD
     "multer": "^1.4.3",
     "mysql2": "^2.3.0",
+=======
+    "joi": "^17.4.2",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+>>>>>>> 0eb097f7a40a4d69da89a13c46cb8e2f7635be2f
     "sequelize": "^6.6.5"
   },
   "devDependencies": {

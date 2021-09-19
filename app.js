@@ -27,7 +27,7 @@ app.get('/chave', (req, res) => {
 
 
 app.get('/', (req, res) => {
-    res.render('home1');
+    res.render('home');
 })
 
 app.use('/user', userRoutes);
